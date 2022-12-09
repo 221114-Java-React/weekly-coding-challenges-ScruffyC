@@ -13,11 +13,10 @@ public class Solution {
                 break;
             }
 
-        int j = 1;
+        int j = 0;
 
         for(int i = index; i < sortedArr.length; i++) {
-            if(sortedArr[index] == k)
-            if (sortedArr[i] != sortedArr[index] + j)
+            if(sortedArr[i] != sortedArr[index] + j)
                 return sortedArr[index] + j;
             else
                 j++;
